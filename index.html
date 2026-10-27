@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#064b2d">
+  <meta name="description" content="The Crickets — Online Publication of Cadi-an Elementary School, Oras, Eastern Samar.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/crickets-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>The Crickets | Cadi-an Elementary School</title>
+</head>
+<body>
+  <div class="announcement"><span>CADI-AN ELEMENTARY SCHOOL</span><span>CADI-AN, ORAS, EASTERN SAMAR · ORAS WEST DISTRICT</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="The Crickets home">
+      <img src="assets/crickets-logo.png" alt="The Crickets publication crest" onerror="this.style.display='none'">
+      <span class="brand-copy"><strong>The <b>Crickets</b></strong><small>ONLINE PUBLICATION</small><em>Small Voices, Powerful Stories.</em></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#features" data-route="features">Feature Stories</a>
+      <a href="#cartooning" data-route="cartooning">Editorial Cartooning</a>
+      <a href="#about" data-route="about">About Us</a>
+      <button class="admin-nav" id="openAdmin">Admin CMS <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view active" id="homeView" data-view="home">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot"></span> SCHOOL NEWS · STUDENT VOICES</p>
+          <h1>Small voices.<br><span>Powerful stories.</span></h1>
+          <p class="hero-desc">A home for the stories, ideas, creativity, and achievements of the Cadi-an Elementary School community.</p>
+          <div class="hero-actions"><a class="btn btn-gold" href="#features">Explore stories <span>→</span></a><a class="text-link" href="#cartooning">Visit cartooning <span>↗</span></a></div>
+        </div>
+        <div class="hero-art">
+          <div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div>
+          <div class="book">✦<br><span>THE CRICKETS</span><small>READ · THINK · SHARE</small></div>
+          <div class="leaf leaf-one">❧</div><div class="leaf leaf-two">❧</div>
+          <div class="hero-stamp">CES<br><small>STUDENT<br>JOURNALISM</small></div>
+        </div>
+      </section>
+      <div class="section-heading"><div><p class="eyebrow">FROM OUR SCHOOL COMMUNITY</p><h2>Latest stories <span class="green-dot">●</span></h2></div><a class="text-link" href="#features">All feature stories →</a></div>
+      <div class="story-grid" id="homeStories"></div>
+      <section class="quote-banner"><div class="quote-mark">“</div><div><h2>Every story has the power to make a difference.</h2><p>We write with curiosity, report with care, and share stories that bring our school community together.</p></div><a class="btn btn-light" href="#about">Meet the publication →</a></section>
+      <div class="section-heading"><div><p class="eyebrow">ART WITH A MESSAGE</p><h2>From the cartoon desk</h2></div><a class="text-link" href="#cartooning">View cartoons →</a></div>
+      <div class="cartoon-grid" id="homeCartoons"></div>
+    </section>
+
+    <section class="view" id="featuresView" data-view="features">
+      <div class="page-intro"><p class="eyebrow">STORIES THAT MATTER</p><h1>Feature <span>Stories</span></h1><p>School life, community voices, student achievements, and ideas worth sharing.</p></div>
+      <div class="filter-row"><span id="featureCount">Latest stories</span><input id="storySearch" type="search" placeholder="Search feature stories…" aria-label="Search feature stories"></div>
+      <div class="story-grid" id="allStories"></div>
+    </section>
+
+    <section class="view" id="cartooningView" data-view="cartooning">
+      <div class="page-intro"><p class="eyebrow">DRAWN TO MAKE US THINK</p><h1>Editorial <span>Cartooning</span></h1><p>Illustrations and visual commentary that invite us to look closer, think critically, and act kindly.</p></div>
+      <div class="cartoon-grid" id="allCartoons"></div>
+    </section>
+
+    <section class="view" id="aboutView" data-view="about">
+      <div class="page-intro"><p class="eyebrow">OUR SCHOOL · OUR STORIES</p><h1>About <span>The Crickets</span></h1><p>A student-centered online publication of Cadi-an Elementary School.</p></div>
+      <div class="about-layout">
+        <div class="about-card"><img src="assets/crickets-logo.png" alt="The Crickets crest"><h2>Small Voices, Powerful Stories.</h2><p><strong>The Crickets</strong> is the online publication identity presented here for Cadi-an Elementary School, Cadi-an, Oras, Eastern Samar, under Oras West District.</p><p>This prototype uses sample stories and illustrative artwork. Replace these with verified school news, approved photos, accurate bylines, and publication dates before public release.</p></div>
+        <div class="values-list"><div><span>01</span><h3>Inform responsibly</h3><p>Check facts, give context, and respect privacy.</p></div><div><span>02</span><h3>Inspire creativity</h3><p>Make room for student voices and original ideas.</p></div><div><span>03</span><h3>Serve our community</h3><p>Tell stories that are relevant, fair, and constructive.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-brand"><span class="mini-cricket">✦</span><div><strong>The Crickets</strong><small>Online Publication · Cadi-an Elementary School</small></div></div><p>Cadi-an, Oras, Eastern Samar · Oras West District</p><p class="copyright">© <span id="year"></span> The Crickets · Student voices, shared with care.</p></footer>
+
+  <div class="modal-backdrop" id="articleModal" aria-hidden="true"><article class="article-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close-modal" data-close="articleModal" aria-label="Close article">×</button><div id="articleContent"></div></article></div>
+
+  <div class="modal-backdrop admin-backdrop" id="adminModal" aria-hidden="true"><section class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+    <button class="close-modal" data-close="adminModal" aria-label="Close admin">×</button>
+    <div class="admin-head"><p class="eyebrow">CONTENT MANAGEMENT</p><h2 id="adminTitle">Publication <span>Desk</span></h2><p>Manage sample stories and cartoons in this browser.</p></div>
+    <div class="admin-tabs"><button class="tab active" data-tab="stories">Feature stories</button><button class="tab" data-tab="cartoons">Cartoons</button></div>
+    <div class="admin-body">
+      <form id="contentForm">
+        <input type="hidden" id="itemId"><input type="hidden" id="itemType" value="stories">
+        <label for="itemTitle">Title</label><input id="itemTitle" required maxlength="120" placeholder="Enter a clear title">
+        <label for="itemAuthor">Author / artist</label><input id="itemAuthor" maxlength="80" placeholder="Student or staff byline">
+        <div class="form-two"><div><label for="itemDate">Publication date</label><input id="itemDate" type="date"></div><div><label for="itemCategory">Category</label><input id="itemCategory" maxlength="40" placeholder="School life"></div></div>
+        <label for="itemImage">Image URL (optional)</label><input id="itemImage" type="url" placeholder="https://…">
+        <label for="itemCaption">Photo caption / cartoon message</label><input id="itemCaption" maxlength="240" placeholder="Describe the image or message">
+        <label for="itemBody">Full story / explanation</label><textarea id="itemBody" rows="5" placeholder="Write the story or explain the cartoon’s message…"></textarea>
+        <div class="form-actions"><button class="btn btn-gold" type="submit" id="saveItem">Save content</button><button class="btn btn-outline" type="button" id="resetForm">Clear</button></div>
+        <p class="form-note">Demo only: changes are saved in this browser’s local storage. No server or shared account is configured.</p>
+      </form>
+      <div class="manage-list"><div class="manage-title"><h3>Published items</h3><span id="manageCount">0 items</span></div><div id="manageItems"></div></div>
+    </div>
+  </section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

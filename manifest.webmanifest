@@ -1,0 +1,17 @@
+{
+  "name": "The Crickets \u2014 Cadi-an Elementary School",
+  "short_name": "The Crickets",
+  "description": "Online publication of Cadi-an Elementary School, Oras West District.",
+  "start_url": "./index.html#home",
+  "display": "standalone",
+  "background_color": "#fbf9ef",
+  "theme_color": "#064b2d",
+  "icons": [
+    {
+      "src": "assets/crickets-logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
